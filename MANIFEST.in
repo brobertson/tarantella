@@ -1,0 +1,16 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+include README.rst
+
+include tarantella/tarantella/static_for_image_xar/collection.xconf
+include tarantella/tarantella/static_for_image_xar/pre-install.xql
+include tarantella/tarantella/static_for_text_xar/collection.xconf
+include tarantella/tarantella/static_for_text_xar/pre-install.xql
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
